@@ -1,4 +1,4 @@
 select
     /*%expand*/*
 from menu
-where id = /*id*/'a'
+where id = /*id*/1

@@ -11,17 +11,19 @@ import org.seasar.doma.jdbc.Result;
 
 @ConfigAutowireable
 @Dao
-public interface RecipeDao
-{
-    @Select
-    Recipe find(String id);
+public interface RecipeDao {
+	@Select
+	Recipe find(String id);
 
-    @Select
-    List<Recipe> findAll();
+	@Select
+	List<Recipe> findAll();
 
-    @Insert
-    int insert(Recipe recipe);
+	@Select
+	List<Recipe> search(String recipe);
 
-    @Update
-    int update(Recipe recipe);
+	@Insert
+	int insert(Recipe recipe);
+
+	@Update
+	int update(Recipe recipe);
 }

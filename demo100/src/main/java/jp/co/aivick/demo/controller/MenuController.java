@@ -35,6 +35,7 @@ public class MenuController {
 
 	@PostMapping("/create")
 	public String create(@Validated MenuForm menuForm, BindingResult bindingResult, Model model) {
+		//バリデーションをした結果がbindingResultに入る
 		if (bindingResult.hasErrors()) {
 			return "menu/create.html";
 		}
